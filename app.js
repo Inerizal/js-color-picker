@@ -419,7 +419,7 @@ function getLocal() {
 }
 
 function clearLibrary() {
-    localStorage.clear();
+    localStorage.removeItem('palettes');
     //savedPaletts = [];
 }
 
