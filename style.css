@@ -81,6 +81,11 @@ svg {
     font-weight: bold;
 }
 
+.close-library {
+    top: 5px;
+    right: 5px;
+}
+
 .controls {
     display: flex;
     flex-direction: column;
@@ -207,7 +212,13 @@ input[type='range'] {
     padding: 1rem;
     justify-content: flex-start;
     overflow-y: scroll;
+    overflow-x: hidden;
     max-height: 50vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.library-popup::-webkit-scrollbar {
+    display: none;
 }
 
 .custom-palette {
